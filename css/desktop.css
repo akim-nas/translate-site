@@ -1,0 +1,72 @@
+body {
+    font-family: Helvetica;
+}
+
+.grd-cntnr {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 2.5fr 2.5fr;
+    grid-template-areas: "itm1 itm2" "itm1 itm3";
+    height: 100vh;
+}
+
+.grd-itm {
+    background-color: white;
+    
+    display: flex;
+}
+
+.grd-itm1 {
+    grid-area: itm1;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 3rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.grd-itm1 > .nav-itm1 {
+    font-size: 2rem;
+}
+
+.grd-itm1 > .nav-itm2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    font-size: 1.5rem;
+}
+
+.grd-itm1 > .nav-itm2 > a, a:hover, a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.grd-itm1 > .nav-itm2 > a:hover {
+    text-decoration: underline;
+}
+
+.grd-itm2 {
+    grid-area: itm2;
+
+    background-color: lightgray;
+    justify-content: center;
+}
+
+.grd-itm2 > .input-itm1 {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.grd-itm3 {
+    grid-area: itm3;
+
+    background-color: lightgray;
+    justify-content: center;
+}
+
+.grd-itm3 > .output-itm1 {
+    font-weight: 700;
+    font-size: 2rem;
+}
