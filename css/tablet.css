@@ -27,7 +27,7 @@ body {
 .grd-itm1 {
     grid-area: itm1;
     text-align: center;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 3rem;
     padding: 0 6rem;
