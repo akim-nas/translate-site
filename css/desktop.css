@@ -1,5 +1,10 @@
+:root {
+    --bg-color: hsl(0, 100%, 100%, 0.8);
+}
+
 body {
     font-family: Helvetica;
+    background-image: url('https://blog.depositphotos.com/wp-content/uploads/2017/07/Soothing-nature-backgrounds-2.jpg.webp');
 }
 
 .grd-cntnr {
@@ -7,13 +12,16 @@ body {
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 2.5fr 2.5fr;
     grid-template-areas: "itm1 itm2" "itm1 itm3";
+    padding: 1rem;
+    gap: 1rem;
     height: 100vh;
 }
 
 .grd-itm {
-    background-color: white;
-    
+    background-color: var(--bg-color);
     display: flex;
+    border-radius: 1rem;
+    box-shadow: 0.5rem 0.5rem 1rem 0 black;
 }
 
 .grd-itm1 {
@@ -50,7 +58,6 @@ body {
 .grd-itm2 {
     grid-area: itm2;
 
-    background-color: lightgray;
     justify-content: center;
 }
 
@@ -62,7 +69,6 @@ body {
 .grd-itm3 {
     grid-area: itm3;
 
-    background-color: lightgray;
     justify-content: center;
 }
 
