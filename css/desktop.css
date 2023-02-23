@@ -53,16 +53,22 @@ body {
 .grd-itm3 {
     grid-area: grd3;
     flex-direction: column;
-    justify-content: space-between;
+}
+
+textarea {
+    font-size: 1.5rem;
+    font-weight: normal;
 }
 
 .grd-itm4 {
     grid-area: grd4;
-    justify-content: center;
 }
 
 .grd-itm3, .grd-itm4 {
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     font-size: 2rem;
     font-weight: 700;
     padding: 1rem;
