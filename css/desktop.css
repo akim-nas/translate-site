@@ -1,5 +1,6 @@
 :root {
     --black: hsl(0, 0%, 18%);
+    --gray: hsl(0, 0%, 30%);
     --white: hsl(0, 0%, 100%);
 }
 
@@ -12,6 +13,7 @@ body {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.3fr 0.2fr 1fr 0.3fr;
     grid-template-areas: "grd1 grd1" "grd2 grd2" "grd3 grd4" "grd5 grd5";
+    grid-gap: 0.2fr;
     height: 100vh;
 }
 
@@ -23,7 +25,7 @@ body {
 .grd-itm1 {
     grid-area: grd1;
     display: flex;
-    justify-content: center;
+    justify-content: space-around; 
     align-items: center;
     font-size: 3rem;
     font-weight: 600;
@@ -35,10 +37,11 @@ body {
     justify-content: center;
     align-items: center;
     gap: 9rem;
+    background-color: var(--black);
 }
 
 .grd-itm2 > .navlink, .navlink:visited, .navlink:hover {
-    color: var(--black-txt);
+    color: var(--white);
     text-decoration: none;
     font-size: 1.5rem;
 }
@@ -49,18 +52,21 @@ body {
 
 .grd-itm3 {
     grid-area: grd3;
-    display: flex;
-    justify-content: center;
-    font-size: 2rem;
-    font-weight: 700;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .grd-itm4 {
     grid-area: grd4;
-    display: flex;
     justify-content: center;
+}
+
+.grd-itm3, .grd-itm4 {
+    display: flex;
     font-size: 2rem;
     font-weight: 700;
+    padding: 1rem;
+    border: 1px solid var(--black);
 }
 
 .grd-itm5 {
