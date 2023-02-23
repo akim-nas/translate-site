@@ -1,0 +1,86 @@
+:root {
+    --black: hsl(0, 0%, 18%);
+    --gray: hsl(0, 0%, 30%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    font-family: Helvetica;
+}
+
+.grd-cntnr {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.3fr 0.2fr 1fr 1fr 0.3fr;
+    grid-template-areas: "grd1" "grd2" "grd3" "grd4" "grd5";
+    grid-gap: 0.2fr;
+    height: 100vh;
+}
+
+.grd-itm {
+    text-align: center;
+    color: var(--black);
+}
+
+.grd-itm1 {
+    grid-area: grd1;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.grd-itm2 {
+    grid-area: grd2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4.5rem;
+    background-color: var(--black);
+}
+
+.grd-itm2 > .navlink, .navlink:visited, .navlink:hover {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.grd-itm2 > .navlink:hover {
+    text-decoration: underline;
+}
+
+.grd-itm3 {
+    grid-area: grd3;
+    flex-direction: column;
+}
+
+textarea {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.grd-itm4 {
+    grid-area: grd4;
+}
+
+.grd-itm3, .grd-itm4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    border: 1px solid var(--black);
+}
+
+.grd-itm5 {
+    grid-area: grd5;
+    background-color: var(--black);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
