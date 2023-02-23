@@ -11,7 +11,7 @@ body {
 .grd-cntnr {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.3fr 0.2fr 1fr 1fr 0.3fr;
+    grid-template-rows: 0.3fr 0.2fr 1fr 1fr 0.2fr;
     grid-template-areas: "grd1" "grd2" "grd3" "grd4" "grd5";
     grid-gap: 0.2fr;
     height: 100vh;
@@ -55,7 +55,7 @@ body {
     flex-direction: column;
 }
 
-textarea {
+form, select, option {
     font-size: 1rem;
     font-weight: normal;
 }
@@ -67,7 +67,7 @@ textarea {
 .grd-itm3, .grd-itm4 {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: start;
     align-items: center;
     font-size: 1.5rem;
     font-weight: 700;
